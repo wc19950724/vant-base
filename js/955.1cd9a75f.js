@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkvant_base"]=self["webpackChunkvant_base"]||[]).push([[955],{1955:function(n,e,t){t.r(e),t.d(e,{default:function(){return f}});var r=t(3396);function u(n,e){return(0,r.wg)(),(0,r.iD)("section",null,"发表班级圈")}var a=t(89);const s={},c=(0,a.Z)(s,[["render",u]]);var f=c}}]);
-//# sourceMappingURL=955.1cd9a75f.js.map
