@@ -3,7 +3,7 @@ const AutoImport = require("unplugin-auto-import/webpack");
 const { VantResolver } = require("unplugin-vue-components/resolvers");
 const Components = require("unplugin-vue-components/webpack");
 module.exports = defineConfig({
-  transpileDependencies: true,
+  publicPath: "./",
   configureWebpack: {
     plugins: [
       AutoImport({
