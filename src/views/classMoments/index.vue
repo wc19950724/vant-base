@@ -1,6 +1,16 @@
 <template>
   <Header :data="previousClasses" v-model="selectedClass" />
-  <van-pull-refresh></van-pull-refresh>
+  <van-pull-refresh v-model="refreshing" @refresh="onRefresh">
+    <van-list
+      v-model:loading="loading"
+      v-model:error="error"
+      :finished="finished"
+      finished-text="没有更多了"
+      @load="onLoad"
+    >
+      <van-cell v-for="item in list" :key="item" :title="item" />
+    </van-list>
+  </van-pull-refresh>
   <van-floating-bubble
     axis="xy"
     icon="chat"
@@ -13,6 +23,7 @@
 import router from "@/router";
 
 import Header from "./components/header.vue";
+import { usePullRefresh } from "./hooks";
 import { IPreviousClasse } from "./type";
 
 // 历届班级
@@ -88,7 +99,6 @@ const jumpPublish = () => {
   router.push("/publish");
 };
 
-watch(selectedClass, () => {
-  console.log(selectedClass.value);
-});
+const { list, refreshing, onRefresh, loading, error, finished, onLoad } =
+  usePullRefresh();
 </script>
