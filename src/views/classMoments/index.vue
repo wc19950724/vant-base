@@ -20,6 +20,7 @@
 </template>
 
 <script lang="ts" setup>
+import api from "@/api";
 import router from "@/router";
 
 import Header from "./components/header.vue";
@@ -101,4 +102,15 @@ const jumpPublish = () => {
 
 const { list, refreshing, onRefresh, loading, error, finished, onLoad } =
   usePullRefresh();
+
+onMounted(() => {
+  api
+    .allClassUsingGet()
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
 </script>
