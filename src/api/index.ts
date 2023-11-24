@@ -1,4 +1,4 @@
-import { Api } from "./Api";
+import { Api } from "./swagger/Api";
 
 const api = new Api({
   baseURL: "https://mock.apifox.com/m1/3608844-0-default",
