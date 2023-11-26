@@ -2,7 +2,10 @@
   <van-nav-bar left-arrow fixed placeholder safe-area-inset-top>
     <template #title>
       <van-dropdown-menu ref="classMenu">
-        <van-dropdown-item :title="modelValue?.name || '全部班级圈'">
+        <van-dropdown-item>
+          <template #title>
+            <div>{{ modelValue?.name || "全部班级圈" }}</div>
+          </template>
           <template v-for="item in data" :key="item.name">
             <div>{{ item.name }}</div>
             <van-grid clickable>
