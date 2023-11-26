@@ -1,6 +1,6 @@
 const { defineConfig } = require("@vue/cli-service");
 const AutoImport = require("unplugin-auto-import/webpack");
-const { VantResolver } = require("unplugin-vue-components/resolvers");
+const { VantResolver } = require("@vant/auto-import-resolver");
 const Components = require("unplugin-vue-components/webpack");
 module.exports = defineConfig({
   publicPath: "./",
@@ -13,7 +13,7 @@ module.exports = defineConfig({
         },
       }),
       Components({
-        resolvers: VantResolver(),
+        resolvers: VantResolver({ importStyle: "css" }),
       }),
     ],
   },

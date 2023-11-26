@@ -1489,6 +1489,11 @@
     "@typescript-eslint/types" "5.62.0"
     eslint-visitor-keys "^3.3.0"
 
+"@vant/auto-import-resolver@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@vant/auto-import-resolver/-/auto-import-resolver-1.0.2.tgz#6eeb5fc3976dc64b425c7cb4ca7c0ddc8469a4fb"
+  integrity sha512-5SYC1izl36KID+3F4pqFtYD8VFK6m1pdulft99sjSkUN4GBX9OslRnsJA0g7xS+0YrytjDuxxBk04YLYIxaYMg==
+
 "@vant/popperjs@^1.3.0":
   version "1.3.0"
   resolved "https://registry.npmjs.org/@vant/popperjs/-/popperjs-1.3.0.tgz#e0eff017124b5b2352ef3b36a6df06277f4400f2"
@@ -6768,10 +6773,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vant@^4.7.3:
-  version "4.7.3"
-  resolved "https://registry.npmjs.org/vant/-/vant-4.7.3.tgz#46cc14bff809e4bebb8651bab50b150ec49794d6"
-  integrity sha512-nb0pXxKSOaE9CvH//KozKDivqhjE4ZRvx1b/RCWFL4H3tZ5l+HhWtwK1yJx5AkO1Pm/IYQY86yZa1tums8DfsQ==
+vant@^4.8.0:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/vant/-/vant-4.8.0.tgz#46cc6cf77593abb1ccf023629b3f47e15aade1dd"
+  integrity sha512-JeEcSd1zt0+fcSo/wuyvhF+dUdd1IaaJmrG0BTiUvH/XcBJEUaTSSEaYG0V8iI38xUTUCuDG+TSfSoSeEwGVAQ==
   dependencies:
     "@vant/popperjs" "^1.3.0"
     "@vant/use" "^1.6.0"
